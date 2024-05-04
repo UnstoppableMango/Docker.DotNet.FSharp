@@ -1,0 +1,28 @@
+<Project>
+	<PropertyGroup>
+		<Authors>UnstoppableMango</Authors>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<PackageProjectUrl>https://github.com/UnstoppableMango/Docker.DotNet.FSharp</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/UnstoppableMango/Docker.DotNet.FSharp</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<DebugType>portable</DebugType>
+		<IncludeSource>true</IncludeSource>
+		<NoPackageAnalysis>true</NoPackageAnalysis>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<LangVersion>preview</LangVersion>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<MinVerTagPrefix>v</MinVerTagPrefix>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<ProjectRoot>$(MSBuildThisFileDirectory)</ProjectRoot>
+	</PropertyGroup>
+</Project>

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net8.0;net9.0</TargetFrameworks>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PackageId>UnMango.Docker.DotNet.FSharp</PackageId>
+		<RootNamespace>Docker.DotNet</RootNamespace>
+		<AssemblyName>UnMango.Docker.DotNet.FSharp</AssemblyName>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="Library.fs" />
+		<None Include="packages.lock.json" Pack="false" />
+		<None Include="$(ProjectRoot)/README.md" Pack="true" PackagePath="/" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Docker.DotNet" Version="3.125.15" />
+		<PackageReference Include="MinVer" Version="5.0.0" PrivateAssets="all" />
+	</ItemGroup>
+
+	<PropertyGroup Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net7.0'))">
+		<IsAotCompatible>true</IsAotCompatible>
+	</PropertyGroup>
+
+</Project>
