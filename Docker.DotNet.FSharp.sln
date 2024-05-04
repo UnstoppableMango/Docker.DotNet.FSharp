@@ -27,6 +27,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{ED8921DA
 		.devcontainer\devcontainer.json = .devcontainer\devcontainer.json
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{A2E9A48B-A1F8-4544-9FC3-DA867B33A70D}"
+	ProjectSection(SolutionItems) = preProject
+		.github\renovate.json = .github\renovate.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{7B092E9A-5A52-4A22-8301-CA328C2BC537}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\main.yml = .github\workflows\main.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +58,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{02DBB452-3F1D-4E70-9A42-6F863BE0046D} = {23CB059C-02EC-449E-AB1E-62DF238A4B67}
 		{10563B35-156A-43C3-BF4E-C32551DAD3B9} = {23CB059C-02EC-449E-AB1E-62DF238A4B67}
+		{7B092E9A-5A52-4A22-8301-CA328C2BC537} = {A2E9A48B-A1F8-4544-9FC3-DA867B33A70D}
 	EndGlobalSection
 EndGlobal
