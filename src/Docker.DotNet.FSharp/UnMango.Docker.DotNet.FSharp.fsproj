@@ -11,9 +11,17 @@
 
 	<ItemGroup>
 		<Compile Include="Library.fs" />
+		<None Include="packages.lock.json" Pack="false" />
+		<None Include="$(ProjectRoot)/README.md" Pack="true" PackagePath="/" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Docker.DotNet" Version="3.125.15" />
+		<PackageReference Include="MinVer" Version="5.0.0" PrivateAssets="all" />
 	</ItemGroup>
 
 	<PropertyGroup Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net7.0'))">
 		<IsAotCompatible>true</IsAotCompatible>
 	</PropertyGroup>
+
 </Project>

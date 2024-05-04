@@ -11,6 +11,7 @@
 	<ItemGroup>
 		<Compile Include="Tests.fs" />
 		<Compile Include="Program.fs" />
+		<None Include="packages.lock.json" />
 	</ItemGroup>
 
 	<ItemGroup>
