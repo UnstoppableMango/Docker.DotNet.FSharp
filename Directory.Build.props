@@ -21,4 +21,8 @@
 	<PropertyGroup>
 		<MinVerTagPrefix>v</MinVerTagPrefix>
 	</PropertyGroup>
+
+	<PropertyGroup>
+		<ProjectRoot>$(MSBuildThisFileDirectory)</ProjectRoot>
+	</PropertyGroup>
 </Project>
