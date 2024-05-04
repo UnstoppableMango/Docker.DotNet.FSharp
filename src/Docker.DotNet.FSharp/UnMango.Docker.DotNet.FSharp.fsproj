@@ -3,6 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PackageId>UnMango.Docker.DotNet.FSharp</PackageId>
 		<RootNamespace>Docker.DotNet</RootNamespace>
 		<AssemblyName>UnMango.Docker.DotNet.FSharp</AssemblyName>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
