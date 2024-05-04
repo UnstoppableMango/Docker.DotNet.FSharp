@@ -1,0 +1,13 @@
+{
+	"name": "Docker.DotNet.FSharp",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:1.1.6-8.0-bookworm-slim",
+	"containerUser": "vscode",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Ionide.Ionide-fsharp",
+				"EditorConfig.EditorConfig"
+			]
+		}
+	}
+}
