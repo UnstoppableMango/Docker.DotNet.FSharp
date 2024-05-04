@@ -12,6 +12,7 @@
 .idea/**/aws.xml
 
 # Artifacts
+.make/
 bin/
 obj/
 *.nupkg
