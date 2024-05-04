@@ -1,12 +1,54 @@
 {
   "version": 1,
   "dependencies": {
+    ".NETStandard,Version=v2.0": {
+      "FSharp.Core": {
+        "type": "Direct",
+        "requested": "[8.0.300-beta.24178.1, )",
+        "resolved": "8.0.300-beta.24178.1",
+        "contentHash": "wvsc4RUdGEPWEb9Zu8HV3TB59Vas+8An2d00Z10mnub9plWkxJuJ21hgfIexsj2q+wqpYIKcBZ4UzyL56Oe3FA=="
+      },
+      "NETStandard.Library": {
+        "type": "Direct",
+        "requested": "[2.0.3, )",
+        "resolved": "2.0.3",
+        "contentHash": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Microsoft.NETCore.Platforms": {
+        "type": "Transitive",
+        "resolved": "1.1.0",
+        "contentHash": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A=="
+      }
+    },
     "net8.0": {
       "FSharp.Core": {
         "type": "Direct",
-        "requested": "[8.0.200, )",
-        "resolved": "8.0.200",
-        "contentHash": "qnxoF3Fu0HzfOeYdrwmQOsLP1v+OtOMSIYkNVUwf6nGqWzL03Hh4r6VFCvCb54jlsgtt3WADVYkKkrgdeY5kiQ=="
+        "requested": "[8.0.300-beta.24178.1, )",
+        "resolved": "8.0.300-beta.24178.1",
+        "contentHash": "wvsc4RUdGEPWEb9Zu8HV3TB59Vas+8An2d00Z10mnub9plWkxJuJ21hgfIexsj2q+wqpYIKcBZ4UzyL56Oe3FA=="
+      },
+      "Microsoft.NET.ILLink.Tasks": {
+        "type": "Direct",
+        "requested": "[8.0.2, )",
+        "resolved": "8.0.2",
+        "contentHash": "hKTrehpfVzOhAz0mreaTAZgbz0DrMEbWq4n3hAo8Ks6WdxdqQhNPvzOqn9VygKuWf1bmxPdraqzTaXriO/sn0A=="
+      }
+    },
+    "net9.0": {
+      "FSharp.Core": {
+        "type": "Direct",
+        "requested": "[8.0.300-beta.24178.1, )",
+        "resolved": "8.0.300-beta.24178.1",
+        "contentHash": "wvsc4RUdGEPWEb9Zu8HV3TB59Vas+8An2d00Z10mnub9plWkxJuJ21hgfIexsj2q+wqpYIKcBZ4UzyL56Oe3FA=="
+      },
+      "Microsoft.NET.ILLink.Tasks": {
+        "type": "Direct",
+        "requested": "[9.0.0-preview.3.24172.9, )",
+        "resolved": "9.0.0-preview.3.24172.9",
+        "contentHash": "I2HGeUNARG9NbmC0n+RJeQGXE7XADjxwyae3E7Cw3WRgAlU9g8WFgSqCLlcNo+ZKqApTWwFbJ0refpQI5nR5/A=="
       }
     }
   }

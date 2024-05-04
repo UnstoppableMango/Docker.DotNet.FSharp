@@ -1,7 +1,7 @@
 {
   "version": 1,
   "dependencies": {
-    "net8.0": {
+    "net9.0": {
       "coverlet.collector": {
         "type": "Direct",
         "requested": "[6.0.0, )",
@@ -20,9 +20,9 @@
       },
       "FSharp.Core": {
         "type": "Direct",
-        "requested": "[8.0.200, )",
-        "resolved": "8.0.200",
-        "contentHash": "qnxoF3Fu0HzfOeYdrwmQOsLP1v+OtOMSIYkNVUwf6nGqWzL03Hh4r6VFCvCb54jlsgtt3WADVYkKkrgdeY5kiQ=="
+        "requested": "[8.0.300-beta.24178.1, )",
+        "resolved": "8.0.300-beta.24178.1",
+        "contentHash": "wvsc4RUdGEPWEb9Zu8HV3TB59Vas+8An2d00Z10mnub9plWkxJuJ21hgfIexsj2q+wqpYIKcBZ4UzyL56Oe3FA=="
       },
       "Microsoft.NET.Test.Sdk": {
         "type": "Direct",
