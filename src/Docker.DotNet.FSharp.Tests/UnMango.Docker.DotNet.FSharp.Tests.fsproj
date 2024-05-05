@@ -9,7 +9,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Compile Include="Tests.fs" />
+		<Compile Include="DockerTests.fs" />
 		<Compile Include="Program.fs" />
 		<None Include="packages.lock.json" />
 	</ItemGroup>
