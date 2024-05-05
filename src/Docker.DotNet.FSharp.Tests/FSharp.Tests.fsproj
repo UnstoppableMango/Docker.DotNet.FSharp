@@ -23,7 +23,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Docker.DotNet.FSharp\UnMango.Docker.DotNet.FSharp.fsproj" />
+	  <ProjectReference Include="..\Docker.DotNet.FSharp\FSharp.fsproj" />
 	</ItemGroup>
 
 </Project>
