@@ -10,7 +10,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Compile Include="Library.fs" />
+		<Compile Include="Docker.fs" />
 		<None Include="packages.lock.json" Pack="false" />
 		<None Include="$(ProjectRoot)/README.md" Pack="true" PackagePath="/" />
 	</ItemGroup>
