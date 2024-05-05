@@ -17,10 +17,31 @@ Idiomatic F# support for [Docker.DotNet](https://github.com/dotnet/Docker.DotNet
 
 ## Usage
 
-TODO
+At the moment, the library supports thin bindings for `IImageOperations` and `IContainerOperations`.
+
+```fsharp
+let docker: IDockerClient // Create a client
+let auth: AuthConfig // Auth stuff if required
+let progress: IProgress<JSONMessage> // Callbacks
+let config = ImageCreateParameters(Image = "ubuntu")
+
+do! docker.Images |> Image.create config auth progress
+```
+
+```fsharp
+let docker: IDockerClient // Create a client
+let config = ContainerCreateParameters(Image = "ubuntu:latest")
+
+let! container = docker.Containers |> Container.create config
+```
 
 ## Q/A
 
 ### Idiomatic? This looks nothing like the F# I write!
 
 If something looks off please open an issue! I've only recently been diving further into the F# ecosystem.
+
+### Deprecated Operations
+
+When I started this project there were a few deprecated operations and I chose not to implement them.
+Future deprecations will be tagged and removed along with upstream.
