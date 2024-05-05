@@ -9,17 +9,21 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Compile Include="Tests.fs" />
+		<Compile Include="DockerTests.fs" />
 		<Compile Include="Program.fs" />
 		<None Include="packages.lock.json" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="coverlet.collector" Version="6.0.2" />
-		<PackageReference Include="FsCheck.Xunit" Version="2.16.6"/>
+		<PackageReference Include="FsCheck.Xunit" Version="3.0.0-rc3" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
 		<PackageReference Include="xunit" Version="2.8.0" />
 		<PackageReference Include="xunit.runner.visualstudio" Version="2.8.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Docker.DotNet.FSharp\UnMango.Docker.DotNet.FSharp.fsproj" />
 	</ItemGroup>
 
 </Project>
