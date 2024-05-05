@@ -152,7 +152,7 @@
           "xunit.extensibility.core": "[2.8.0]"
         }
       },
-      "fsharp": {
+      "UnMango.Docker.DotNet.FSharp": {
         "type": "Project",
         "dependencies": {
           "Docker.DotNet": "[3.125.15, )",
