@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{23CB059C-02EC-449E-AB1E-62DF238A4B67}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "UnMango.Docker.DotNet.FSharp", "src\Docker.DotNet.FSharp\UnMango.Docker.DotNet.FSharp.fsproj", "{02DBB452-3F1D-4E70-9A42-6F863BE0046D}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp", "src\Docker.DotNet.FSharp\FSharp.fsproj", "{02DBB452-3F1D-4E70-9A42-6F863BE0046D}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "UnMango.Docker.DotNet.FSharp.Tests", "src\Docker.DotNet.FSharp.Tests\UnMango.Docker.DotNet.FSharp.Tests.fsproj", "{10563B35-156A-43C3-BF4E-C32551DAD3B9}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Tests", "src\Docker.DotNet.FSharp.Tests\FSharp.Tests.fsproj", "{10563B35-156A-43C3-BF4E-C32551DAD3B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{E89918BE-0BFF-4EF2-B735-ADC972D1D9B7}"
 	ProjectSection(SolutionItems) = preProject

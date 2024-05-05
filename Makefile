@@ -35,7 +35,7 @@ devcontainer: CLI := npx @devcontainers/cli@$(CLI_VER)
 devcontainer: .make/ensure_npx .versions/devcontainers_cli
 	${CLI} build --workspace-folder '${WORKING_DIR}'
 
-PROJECT_FILE := src/Docker.DotNet.FSharp/UnMango.Docker.DotNet.FSharp.fsproj
+PROJECT_FILE := src/Docker.DotNet.FSharp/FSharp.fsproj
 SRC := $(shell find src -maxdepth 2 -type f -name '*.fs')
 
 out/UnMango.Docker.DotNet.FSharp.$(VERSION).nupkg: $(SRC) $(PROJECT_FILE) README.md
