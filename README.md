@@ -17,6 +17,8 @@ Idiomatic F# support for [Docker.DotNet](https://github.com/dotnet/Docker.DotNet
 
 ## Usage
 
+This project is still a work in progress and nothing is guaranteed to work!
+
 At the moment, the library supports thin bindings for `IImageOperations` and `IContainerOperations`.
 
 ```fsharp
@@ -33,6 +35,15 @@ let docker: IDockerClient // Create a client
 let config = ContainerCreateParameters(Image = "ubuntu:latest")
 
 let! container = docker.Containers |> Container.create config
+```
+
+You can define a very minimal computation expression to create an image.
+
+```fsharp
+let docker: IDockerClient // Create a client
+
+image { create { fromImage "ubuntu" } }
+|> Image.runAll docker.Images
 ```
 
 ## Q/A

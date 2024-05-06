@@ -5,6 +5,15 @@ open System.Runtime.CompilerServices
 open System.Threading
 open System.Threading.Tasks
 open Docker.DotNet.Internal
+open Docker.DotNet.Models
+open UnMango.Docker
+open UnMango.Docker.Image
+
+module private Convert =
+    let create: Create -> ImagesCreateParameters =
+        function
+        | { FromImage = Some i } -> ImagesCreateParameters(FromImage = i)
+        | _ -> failwith "unsupported configuration"
 
 type private Ext =
     [<Extension>]
@@ -17,6 +26,11 @@ type private Ext =
     [<Extension>]
     static member inline AwaitList(docker, f: IImageOperations -> CancellationToken -> Task<IList<_>>) =
         WC.wrap docker |> _.AwaitList(f)
+
+    [<Extension>]
+    static member Create(docker: IImageOperations, create) =
+        let p = Convert.create create
+        docker.Await(fun d ct -> d.CreateImageAsync(p, null, null, ct))
 
 let buildFromDockerfile p contents auth headers progress (docker: IImageOperations) =
     docker.Await(fun x ct -> x.BuildImageFromDockerfileAsync(p, contents, auth, headers, progress, ct))
@@ -64,3 +78,15 @@ let search p (docker: IImageOperations) =
 
 let tag name p (docker: IImageOperations) =
     docker.Await(fun x ct -> x.TagImageAsync(name, p, ct))
+
+let run (docker: IImageOperations) =
+    function
+    | Images.Create x -> docker.Create(x)
+    | _ -> failwith "unsupported operation"
+
+let runAll (docker: IImageOperations) =
+    Seq.map (run docker) >> Async.Sequential
+
+let client =
+    use config = new DockerClientConfiguration()
+    config.CreateClient()

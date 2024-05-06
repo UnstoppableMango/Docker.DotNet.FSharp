@@ -34,6 +34,15 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
+      "UnMango.Docker.FSharp": {
+        "type": "Direct",
+        "requested": "[0.0.1-alpha.4, )",
+        "resolved": "0.0.1-alpha.4",
+        "contentHash": "6mOO3Fk3ZFWb/hHdUIMoxhG0xXFNjy7pyjaVRhWiBg7iSdrxW8qVtVgpfua3SeIbANa1cEF0t7msaDpohQ4uqA==",
+        "dependencies": {
+          "FSharp.Core": "8.0.300-beta.24178.1"
+        }
+      },
       "Microsoft.NETCore.Platforms": {
         "type": "Transitive",
         "resolved": "1.1.0",
@@ -93,6 +102,15 @@
         "resolved": "5.0.0",
         "contentHash": "ybkgpQMtt0Fo91l5rYtE3TZtD+Nmy5Ko091xvfXXOosQdMi30XO2EZ2+ShZt89gdu7RMmJqZaJ+e1q6d+6+KNw=="
       },
+      "UnMango.Docker.FSharp": {
+        "type": "Direct",
+        "requested": "[0.0.1-alpha.4, )",
+        "resolved": "0.0.1-alpha.4",
+        "contentHash": "6mOO3Fk3ZFWb/hHdUIMoxhG0xXFNjy7pyjaVRhWiBg7iSdrxW8qVtVgpfua3SeIbANa1cEF0t7msaDpohQ4uqA==",
+        "dependencies": {
+          "FSharp.Core": "8.0.300-beta.24178.1"
+        }
+      },
       "Newtonsoft.Json": {
         "type": "Transitive",
         "resolved": "13.0.1",
@@ -138,6 +156,15 @@
         "requested": "[5.0.0, )",
         "resolved": "5.0.0",
         "contentHash": "ybkgpQMtt0Fo91l5rYtE3TZtD+Nmy5Ko091xvfXXOosQdMi30XO2EZ2+ShZt89gdu7RMmJqZaJ+e1q6d+6+KNw=="
+      },
+      "UnMango.Docker.FSharp": {
+        "type": "Direct",
+        "requested": "[0.0.1-alpha.4, )",
+        "resolved": "0.0.1-alpha.4",
+        "contentHash": "6mOO3Fk3ZFWb/hHdUIMoxhG0xXFNjy7pyjaVRhWiBg7iSdrxW8qVtVgpfua3SeIbANa1cEF0t7msaDpohQ4uqA==",
+        "dependencies": {
+          "FSharp.Core": "8.0.300-beta.24178.1"
+        }
       },
       "Newtonsoft.Json": {
         "type": "Transitive",

@@ -5,7 +5,7 @@ _ := $(shell mkdir -p .make)
 VERSION := $(shell dotnet minver --tag-prefix v --verbosity warn)
 export MINVERVERSIONOVERRIDE = ${VERSION}
 
-.PHONY: all build test lint clean pack version
+.PHONY: all build test lint format clean pack version
 all: build check test
 
 build: .make/build
@@ -16,6 +16,7 @@ test: .make/build
 
 check: .make/lint_check
 lint: .make/lint
+format: .make/format
 
 clean:
 	rm -rf .make out
@@ -56,6 +57,9 @@ out/UnMango.Docker.DotNet.FSharp.$(VERSION).nupkg: $(SRC) $(PROJECT_FILE) README
 .make/lint_check: $(SRC) .make/restore_tools
 	${FANTOMAS} ${WORKING_DIR} --check
 	@touch $@
+
+.make/format: $(SRC) .make/restore_tools
+	${FANTOMAS} .
 
 .make/restore_tools: .config/dotnet-tools.json
 	dotnet tool restore
