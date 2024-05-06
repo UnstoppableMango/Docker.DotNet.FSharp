@@ -90,7 +90,3 @@ let runAll (docker: IImageOperations) =
 let client =
     use config = new DockerClientConfiguration()
     config.CreateClient()
-
-let test =
-    image { Create.create { fromImage "" } }
-    |> runAll client.Images
