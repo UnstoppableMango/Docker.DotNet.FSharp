@@ -112,6 +112,14 @@
         "resolved": "4.5.4",
         "contentHash": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg=="
       },
+      "UnMango.Docker.FSharp": {
+        "type": "Transitive",
+        "resolved": "0.0.1-alpha.4",
+        "contentHash": "6mOO3Fk3ZFWb/hHdUIMoxhG0xXFNjy7pyjaVRhWiBg7iSdrxW8qVtVgpfua3SeIbANa1cEF0t7msaDpohQ4uqA==",
+        "dependencies": {
+          "FSharp.Core": "8.0.300-beta.24178.1"
+        }
+      },
       "xunit.abstractions": {
         "type": "Transitive",
         "resolved": "2.0.3",
@@ -156,7 +164,8 @@
         "type": "Project",
         "dependencies": {
           "Docker.DotNet": "[3.125.15, )",
-          "FSharp.Core": "[8.0.300-beta.24178.1, )"
+          "FSharp.Core": "[8.0.300-beta.24178.1, )",
+          "UnMango.Docker.FSharp": "[0.0.1-alpha.4, )"
         }
       }
     }
