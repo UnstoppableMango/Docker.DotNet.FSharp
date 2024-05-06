@@ -10,6 +10,7 @@
 .idea/**/codeStyleConfig.xml
 .idea/**/discord.xml
 .idea/**/aws.xml
+.fake
 
 # Artifacts
 .make/
