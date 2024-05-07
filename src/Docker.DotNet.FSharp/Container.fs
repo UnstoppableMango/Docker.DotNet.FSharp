@@ -10,9 +10,9 @@ open UnMango.Docker.Containers
 
 module private Convert =
     let create: Create -> CreateContainerParameters =
-        function
-        | { Cmd = c } -> CreateContainerParameters(Cmd = ResizeArray(c))
-        | _ -> failwith "unsupported configuration"
+        function // TODO: The rest of this
+        | { Cmd = c; Entrypoint = ent; Env = env } ->
+            CreateContainerParameters(Cmd = ResizeArray(c), Entrypoint = ResizeArray(ent), Env = ResizeArray(env))
 
 type private Ext =
     [<Extension>]
