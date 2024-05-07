@@ -6,8 +6,7 @@ open System.Threading
 open System.Threading.Tasks
 open Docker.DotNet.Internal
 open Docker.DotNet.Models
-open UnMango.Docker
-open UnMango.Docker.Image
+open UnMango.Docker.Images
 
 module private Convert =
     let create: Create -> ImagesCreateParameters =
@@ -79,9 +78,9 @@ let search p (docker: IImageOperations) =
 let tag name p (docker: IImageOperations) =
     docker.Await(fun x ct -> x.TagImageAsync(name, p, ct))
 
-let run (docker: IImageOperations) =
+let run (client: IImageOperations) =
     function
-    | Images.Create x -> docker.Create(x)
+    | Create x -> client.Create(x)
     | _ -> failwith "unsupported operation"
 
 let runAll (docker: IImageOperations) =

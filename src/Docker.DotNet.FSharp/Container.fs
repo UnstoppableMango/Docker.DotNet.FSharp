@@ -5,6 +5,14 @@ open System.Runtime.CompilerServices
 open System.Threading
 open System.Threading.Tasks
 open Docker.DotNet.Internal
+open Docker.DotNet.Models
+open UnMango.Docker.Containers
+
+module private Convert =
+    let create: Create -> CreateContainerParameters =
+        function
+        | { Cmd = c } -> CreateContainerParameters(Cmd = ResizeArray(c))
+        | _ -> failwith "unsupported configuration"
 
 type private Ext =
     [<Extension>]
@@ -87,3 +95,8 @@ let update id p (docker: IContainerOperations) =
 
 let wait id (docker: IContainerOperations) =
     docker.Await(fun x ct -> x.WaitContainerAsync(id, ct))
+
+let run (client: IContainerOperations) =
+    function
+    | Create action -> create (Convert.create action) client
+    | _ -> failwith "TODO"
