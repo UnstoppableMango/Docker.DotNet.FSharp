@@ -5,6 +5,14 @@ open System.Runtime.CompilerServices
 open System.Threading
 open System.Threading.Tasks
 open Docker.DotNet.Internal
+open Docker.DotNet.Models
+open UnMango.Docker.Containers
+
+module private Convert =
+    let create: Create -> CreateContainerParameters =
+        function // TODO: The rest of this
+        | { Cmd = c; Entrypoint = ent; Env = env } ->
+            CreateContainerParameters(Cmd = ResizeArray(c), Entrypoint = ResizeArray(ent), Env = ResizeArray(env))
 
 type private Ext =
     [<Extension>]
@@ -87,3 +95,8 @@ let update id p (docker: IContainerOperations) =
 
 let wait id (docker: IContainerOperations) =
     docker.Await(fun x ct -> x.WaitContainerAsync(id, ct))
+
+let run (client: IContainerOperations) =
+    function
+    | Create action -> create (Convert.create action) client
+    | _ -> failwith "TODO"
