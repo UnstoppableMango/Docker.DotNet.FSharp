@@ -85,7 +85,3 @@ let run (client: IImageOperations) =
 
 let runAll (docker: IImageOperations) =
     Seq.map (run docker) >> Async.Sequential
-
-let client =
-    use config = new DockerClientConfiguration()
-    config.CreateClient()
