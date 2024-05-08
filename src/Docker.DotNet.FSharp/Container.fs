@@ -9,10 +9,43 @@ open Docker.DotNet.Models
 open UnMango.Docker.Containers
 
 module private Convert =
+    let attach: Attach -> ContainerAttachParameters =
+        function // TODO: Logs once the type is fixed
+        | { Stderr = stderr
+            Stdin = stdin
+            Stdout = stdout
+            Stream = stream
+            DetachKeys = Some d } ->
+            ContainerAttachParameters(Stderr = stderr, Stdin = stdin, Stdout = stdout, Stream = stream, DetachKeys = d)
+        | _ -> failwith "unsupported configuration"
+
     let create: Create -> CreateContainerParameters =
-        function // TODO: The rest of this
-        | { Cmd = c; Entrypoint = ent; Env = env } ->
-            CreateContainerParameters(Cmd = ResizeArray(c), Entrypoint = ResizeArray(ent), Env = ResizeArray(env))
+        function
+        | { AttachStderr = ase
+            AttachStdin = asi
+            AttachStdout = aso
+            Cmd = c
+            Entrypoint = ent
+            Env = env
+            ExposedPorts = ports
+            Image = Some img
+            OpenStdin = osi
+            StdinOnce = sio
+            Tty = tty } ->
+            CreateContainerParameters(
+                AttachStderr = ase,
+                AttachStdin = asi,
+                AttachStdout = aso,
+                Cmd = ResizeArray(c),
+                Entrypoint = ResizeArray(ent),
+                Env = ResizeArray(env),
+                ExposedPorts = (ports |> Map.map (fun _ _ -> EmptyStruct())),
+                Image = img,
+                OpenStdin = osi,
+                StdinOnce = sio,
+                Tty = tty
+            )
+        | _ -> failwith "unsupported configuration"
 
 type private Ext =
     [<Extension>]
@@ -98,5 +131,6 @@ let wait id (docker: IContainerOperations) =
 
 let run (client: IContainerOperations) =
     function
-    | Create action -> create (Convert.create action) client
+    | Attach action -> attach action.Id false (Convert.attach action) client |> Async.Ignore
+    | Create action -> create (Convert.create action) client |> Async.Ignore
     | _ -> failwith "TODO"
