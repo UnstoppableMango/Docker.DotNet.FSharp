@@ -36,9 +36,9 @@
       },
       "UnMango.Docker.FSharp": {
         "type": "Direct",
-        "requested": "[0.0.1-alpha.9, )",
-        "resolved": "0.0.1-alpha.9",
-        "contentHash": "MXB0+XRSaQdg1paoJMZEveyZcBhqUvePVEKWXPAfGvVatHu3sNNeFQFL52GFzJWMV4ugTuxOUZ91R4tshkKkaQ==",
+        "requested": "[0.0.2, )",
+        "resolved": "0.0.2",
+        "contentHash": "As7sf/1CcAypRsH7YmjvS15SIfS61avQ9M1WUneuKzd5GseGnZ9GCb6HcWKM6eRvtlXInNY5gvcIBW0j/abyCA==",
         "dependencies": {
           "FSharp.Core": "8.0.300-beta.24178.1"
         }
@@ -104,9 +104,9 @@
       },
       "UnMango.Docker.FSharp": {
         "type": "Direct",
-        "requested": "[0.0.1-alpha.9, )",
-        "resolved": "0.0.1-alpha.9",
-        "contentHash": "MXB0+XRSaQdg1paoJMZEveyZcBhqUvePVEKWXPAfGvVatHu3sNNeFQFL52GFzJWMV4ugTuxOUZ91R4tshkKkaQ==",
+        "requested": "[0.0.2, )",
+        "resolved": "0.0.2",
+        "contentHash": "As7sf/1CcAypRsH7YmjvS15SIfS61avQ9M1WUneuKzd5GseGnZ9GCb6HcWKM6eRvtlXInNY5gvcIBW0j/abyCA==",
         "dependencies": {
           "FSharp.Core": "8.0.300-beta.24178.1"
         }
@@ -159,9 +159,9 @@
       },
       "UnMango.Docker.FSharp": {
         "type": "Direct",
-        "requested": "[0.0.1-alpha.9, )",
-        "resolved": "0.0.1-alpha.9",
-        "contentHash": "MXB0+XRSaQdg1paoJMZEveyZcBhqUvePVEKWXPAfGvVatHu3sNNeFQFL52GFzJWMV4ugTuxOUZ91R4tshkKkaQ==",
+        "requested": "[0.0.2, )",
+        "resolved": "0.0.2",
+        "contentHash": "As7sf/1CcAypRsH7YmjvS15SIfS61avQ9M1WUneuKzd5GseGnZ9GCb6HcWKM6eRvtlXInNY5gvcIBW0j/abyCA==",
         "dependencies": {
           "FSharp.Core": "8.0.300-beta.24178.1"
         }
