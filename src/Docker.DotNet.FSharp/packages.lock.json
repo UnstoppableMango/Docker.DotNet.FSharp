@@ -15,9 +15,9 @@
       },
       "FSharp.Core": {
         "type": "Direct",
-        "requested": "[8.0.300-beta.24178.1, )",
-        "resolved": "8.0.300-beta.24178.1",
-        "contentHash": "wvsc4RUdGEPWEb9Zu8HV3TB59Vas+8An2d00Z10mnub9plWkxJuJ21hgfIexsj2q+wqpYIKcBZ4UzyL56Oe3FA=="
+        "requested": "[8.0.400-beta.24229.4, )",
+        "resolved": "8.0.400-beta.24229.4",
+        "contentHash": "elHsLWLRKPsNxDSYWlFYSm7rKP2wT6WHDbqVeBv/b9/8364H0UgDA8RqOUPvmBaCY5ISpWNIn4g4QofmDpCijg=="
       },
       "MinVer": {
         "type": "Direct",
@@ -36,9 +36,9 @@
       },
       "UnMango.Docker.FSharp": {
         "type": "Direct",
-        "requested": "[0.0.3-alpha.0.1, )",
-        "resolved": "0.0.3-alpha.0.1",
-        "contentHash": "BpBdNhKsVLEClXc2ou/LlYPUjQJTw8rSnw/gJoY/iSK/AldnZsnTLmzjbmC/s0yfdknd99w95kyDyTZM6TXUXA==",
+        "requested": "[0.0.3, )",
+        "resolved": "0.0.3",
+        "contentHash": "qUiiuF8dVrClKR0Kon7b42B8Sw+K7hp+428LFlBnf1pHBqKJYD1OuwY3oCiJjo+PQyysg2FgH2lbTgR7zMzJXg==",
         "dependencies": {
           "FSharp.Core": "8.0.300-beta.24178.1"
         }
@@ -86,15 +86,15 @@
       },
       "FSharp.Core": {
         "type": "Direct",
-        "requested": "[8.0.300-beta.24178.1, )",
-        "resolved": "8.0.300-beta.24178.1",
-        "contentHash": "wvsc4RUdGEPWEb9Zu8HV3TB59Vas+8An2d00Z10mnub9plWkxJuJ21hgfIexsj2q+wqpYIKcBZ4UzyL56Oe3FA=="
+        "requested": "[8.0.400-beta.24229.4, )",
+        "resolved": "8.0.400-beta.24229.4",
+        "contentHash": "elHsLWLRKPsNxDSYWlFYSm7rKP2wT6WHDbqVeBv/b9/8364H0UgDA8RqOUPvmBaCY5ISpWNIn4g4QofmDpCijg=="
       },
       "Microsoft.NET.ILLink.Tasks": {
         "type": "Direct",
-        "requested": "[8.0.2, )",
-        "resolved": "8.0.2",
-        "contentHash": "hKTrehpfVzOhAz0mreaTAZgbz0DrMEbWq4n3hAo8Ks6WdxdqQhNPvzOqn9VygKuWf1bmxPdraqzTaXriO/sn0A=="
+        "requested": "[8.0.4, )",
+        "resolved": "8.0.4",
+        "contentHash": "PZb5nfQ+U19nhnmnR9T1jw+LTmozhuG2eeuzuW5A7DqxD/UXW2ucjmNJqnqOuh8rdPzM3MQXoF8AfFCedJdCUw=="
       },
       "MinVer": {
         "type": "Direct",
@@ -104,9 +104,9 @@
       },
       "UnMango.Docker.FSharp": {
         "type": "Direct",
-        "requested": "[0.0.3-alpha.0.1, )",
-        "resolved": "0.0.3-alpha.0.1",
-        "contentHash": "BpBdNhKsVLEClXc2ou/LlYPUjQJTw8rSnw/gJoY/iSK/AldnZsnTLmzjbmC/s0yfdknd99w95kyDyTZM6TXUXA==",
+        "requested": "[0.0.3, )",
+        "resolved": "0.0.3",
+        "contentHash": "qUiiuF8dVrClKR0Kon7b42B8Sw+K7hp+428LFlBnf1pHBqKJYD1OuwY3oCiJjo+PQyysg2FgH2lbTgR7zMzJXg==",
         "dependencies": {
           "FSharp.Core": "8.0.300-beta.24178.1"
         }
@@ -141,15 +141,15 @@
       },
       "FSharp.Core": {
         "type": "Direct",
-        "requested": "[8.0.300-beta.24178.1, )",
-        "resolved": "8.0.300-beta.24178.1",
-        "contentHash": "wvsc4RUdGEPWEb9Zu8HV3TB59Vas+8An2d00Z10mnub9plWkxJuJ21hgfIexsj2q+wqpYIKcBZ4UzyL56Oe3FA=="
+        "requested": "[8.0.400-beta.24229.4, )",
+        "resolved": "8.0.400-beta.24229.4",
+        "contentHash": "elHsLWLRKPsNxDSYWlFYSm7rKP2wT6WHDbqVeBv/b9/8364H0UgDA8RqOUPvmBaCY5ISpWNIn4g4QofmDpCijg=="
       },
       "Microsoft.NET.ILLink.Tasks": {
         "type": "Direct",
-        "requested": "[9.0.0-preview.3.24172.9, )",
-        "resolved": "9.0.0-preview.3.24172.9",
-        "contentHash": "I2HGeUNARG9NbmC0n+RJeQGXE7XADjxwyae3E7Cw3WRgAlU9g8WFgSqCLlcNo+ZKqApTWwFbJ0refpQI5nR5/A=="
+        "requested": "[9.0.0-preview.4.24266.19, )",
+        "resolved": "9.0.0-preview.4.24266.19",
+        "contentHash": "h+izO21pVwxzRW7+p+c/HhPYE8Bvwgpz+czySVLtEeg4Q+kXXkw/WcKvNIPEvRK96p+PMtbRFZCnvA9VMg4BZQ=="
       },
       "MinVer": {
         "type": "Direct",
@@ -159,9 +159,9 @@
       },
       "UnMango.Docker.FSharp": {
         "type": "Direct",
-        "requested": "[0.0.3-alpha.0.1, )",
-        "resolved": "0.0.3-alpha.0.1",
-        "contentHash": "BpBdNhKsVLEClXc2ou/LlYPUjQJTw8rSnw/gJoY/iSK/AldnZsnTLmzjbmC/s0yfdknd99w95kyDyTZM6TXUXA==",
+        "requested": "[0.0.3, )",
+        "resolved": "0.0.3",
+        "contentHash": "qUiiuF8dVrClKR0Kon7b42B8Sw+K7hp+428LFlBnf1pHBqKJYD1OuwY3oCiJjo+PQyysg2FgH2lbTgR7zMzJXg==",
         "dependencies": {
           "FSharp.Core": "8.0.300-beta.24178.1"
         }

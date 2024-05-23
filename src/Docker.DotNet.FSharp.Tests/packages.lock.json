@@ -21,9 +21,9 @@
       },
       "FSharp.Core": {
         "type": "Direct",
-        "requested": "[8.0.300-beta.24178.1, )",
-        "resolved": "8.0.300-beta.24178.1",
-        "contentHash": "wvsc4RUdGEPWEb9Zu8HV3TB59Vas+8An2d00Z10mnub9plWkxJuJ21hgfIexsj2q+wqpYIKcBZ4UzyL56Oe3FA=="
+        "requested": "[8.0.400-beta.24229.4, )",
+        "resolved": "8.0.400-beta.24229.4",
+        "contentHash": "elHsLWLRKPsNxDSYWlFYSm7rKP2wT6WHDbqVeBv/b9/8364H0UgDA8RqOUPvmBaCY5ISpWNIn4g4QofmDpCijg=="
       },
       "Microsoft.NET.Test.Sdk": {
         "type": "Direct",
@@ -114,8 +114,8 @@
       },
       "UnMango.Docker.FSharp": {
         "type": "Transitive",
-        "resolved": "0.0.3-alpha.0.1",
-        "contentHash": "BpBdNhKsVLEClXc2ou/LlYPUjQJTw8rSnw/gJoY/iSK/AldnZsnTLmzjbmC/s0yfdknd99w95kyDyTZM6TXUXA==",
+        "resolved": "0.0.3",
+        "contentHash": "qUiiuF8dVrClKR0Kon7b42B8Sw+K7hp+428LFlBnf1pHBqKJYD1OuwY3oCiJjo+PQyysg2FgH2lbTgR7zMzJXg==",
         "dependencies": {
           "FSharp.Core": "8.0.300-beta.24178.1"
         }
@@ -164,8 +164,8 @@
         "type": "Project",
         "dependencies": {
           "Docker.DotNet": "[3.125.15, )",
-          "FSharp.Core": "[8.0.300-beta.24178.1, )",
-          "UnMango.Docker.FSharp": "[0.0.3-alpha.0.1, )"
+          "FSharp.Core": "[8.0.400-beta.24229.4, )",
+          "UnMango.Docker.FSharp": "[0.0.3, )"
         }
       }
     }
