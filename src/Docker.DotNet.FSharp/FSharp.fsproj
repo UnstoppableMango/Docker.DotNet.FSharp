@@ -20,7 +20,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Docker.DotNet" Version="3.125.15" />
-		<PackageReference Include="MinVer" Version="5.0.0" PrivateAssets="all" />
+		<PackageReference Include="MinVer" Version="6.0.0" PrivateAssets="all" />
 		<PackageReference Include="UnMango.Docker.FSharp" Version="0.0.3" />
 	</ItemGroup>
 
